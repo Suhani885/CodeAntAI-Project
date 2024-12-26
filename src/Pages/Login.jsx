@@ -19,12 +19,12 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
       <div className="flex w-full max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden">
-        <div className="hidden md:block w-1/2 bg-slate-50 p-8 relative">
-          <div className="bg-white rounded-xl p-6 shadow-md">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+        <div className="hidden md:block w-1/2 bg-gradient-to-b from-slate-50 to-slate-100 p-8 relative">
+          <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+            <div className="flex items-center space-x-3 mb-8">
+              <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
                 <svg
-                  className="w-5 h-5 text-blue-600"
+                  className="w-6 h-6 text-blue-600"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -37,29 +37,43 @@ const Login = () => {
                   />
                 </svg>
               </div>
-              <h3 className="font-semibold">AI to Detect & Autofix Bad Code</h3>
+              <h3 className="text-lg font-bold">
+                AI to Detect & Autofix Bad Code
+              </h3>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 mb-6">
+            <div className="grid grid-cols-3 gap-6 mb-12">
               <div className="text-center">
-                <div className="text-sm text-gray-600">Language support</div>
-                <div className="font-bold text-xl">30+</div>
+                <div className="text-xl font-bold mb-1">30+</div>
+                <div className="text-sm text-gray-600">Language Support</div>
               </div>
               <div className="text-center">
+                <div className="text-xl font-bold mb-1">10K+</div>
                 <div className="text-sm text-gray-600">Developers</div>
-                <div className="font-bold text-xl">10K+</div>
               </div>
               <div className="text-center">
+                <div className="text-xl font-bold mb-1">100K+</div>
                 <div className="text-sm text-gray-600">Hours Saved</div>
-                <div className="font-bold text-xl">100K+</div>
               </div>
             </div>
 
-            <div className="flex justify-center">
-              <div className=" text-black px-4 py-2 rounded-full">
-                Issues Fixed <br />
-                <span className="font-bold text-xl">500K+</span>
+            <div className="bg-slate-50 rounded-xl p-6 relative">
+              <div className="absolute -right-2 -top-2 text-blue-500 text-sm px-3 py-1 rounded-full">
+                ↑ 14% <br /> This week
               </div>
+              <div className="mb-2 text-gray-600">Issues Fixed</div>
+              <div className="text-4xl font-bold">500K+</div>
+              {/* <div className="absolute bottom-6 right-6">
+                <svg className="w-16 h-16 text-blue-100" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="40" fill="currentColor" />
+                  <path
+                    d="M50 20 A30 30 0 0 1 80 50"
+                    stroke="blue"
+                    fill="none"
+                    strokeWidth="8"
+                  />
+                </svg>
+              </div> */}
             </div>
           </div>
         </div>
@@ -147,7 +161,7 @@ const Login = () => {
                 <span>Sign in with SSO</span>
               </button>
 
-              <div className="mt-4 text-sm text-center text-gray-500">
+              <div className=" text-sm text-center text-gray-500">
                 By signing up you agree to the{" "}
                 <a
                   href="/privacy-policy"
