@@ -46,13 +46,6 @@ const Interface = () => {
       size: "1876 KB",
       updatedAt: "4 days ago",
     },
-    {
-      name: "social-network",
-      visibility: "Private",
-      language: "PHP",
-      size: "5432 KB",
-      updatedAt: "7 days ago",
-    },
   ];
 
   const Sidebar = () => (
@@ -81,7 +74,7 @@ const Interface = () => {
         </div>
 
         <nav className="space-y-1 px-4">
-          <a className="flex items-center gap-3 px-4 py-2 text-blue-600 bg-blue-50 rounded-md">
+          <a className="flex items-center gap-3 px-4 py-2 text-white bg-blue-500 rounded-md">
             <svg
               className="w-5 h-5"
               viewBox="0 0 24 24"
@@ -382,14 +375,14 @@ const Interface = () => {
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <span className="font-medium">{repo.name}</span>
-                    <span className="px-2 py-0.5 text-xs text-gray-600 bg-gray-100 rounded-full">
+                    <span className="px-2 py-0.5 text-xs text-blue-500 bg-blue-50 rounded-full">
                       {repo.visibility}
                     </span>
                   </div>
                   <div className="flex items-center gap-4 text-sm text-gray-600">
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-blue-500"></div>
                       {repo.language}
+                      <div className="w-2 h-2 rounded-full bg-blue-500"></div>
                     </div>
                     <span>{repo.size}</span>
                     <span>Updated {repo.updatedAt}</span>
